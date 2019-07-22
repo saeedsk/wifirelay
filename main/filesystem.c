@@ -57,3 +57,11 @@
     esp_vfs_spiffs_unregister(NULL);
     ESP_LOGI(TAG, "SPIFFS unmounted");
 #endif    
+
+
+
+int filesystem_init()
+{
+    nvs_flash_init();
+    return 0;
+}

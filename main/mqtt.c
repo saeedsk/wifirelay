@@ -63,6 +63,7 @@ esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
 
 
 
+
 static void mqtt_app_start(void)
 {
     esp_mqtt_client_config_t mqtt_cfg = {
@@ -76,3 +77,7 @@ static void mqtt_app_start(void)
 }
 
 
+int mqtt_init()
+{
+    mqtt_app_start();
+}
