@@ -45,4 +45,4 @@ export BIN_PATH=$WORKING_DIR/../$TOOLCHAIN_DIR/bin
 
 
 pip2 install -q --user -r $IDF_PATH/requirements.txt
-
+pip2 install esptool
